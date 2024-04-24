@@ -1,7 +1,11 @@
 import { Elysia } from "elysia";
+import { html } from "@elysiajs/html";
+import { staticPlugin } from "@elysiajs/static";
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(3000);
+const _app = new Elysia()
+  .use(html())
+  .use(staticPlugin())
+  .get("/", () => "Hello Elysia")
+  .listen(3000);
 
-console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
-);
+console.log("🔥 Bexlite started ...");
