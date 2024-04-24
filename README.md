@@ -1,15 +1,29 @@
-# Elysia with Bun runtime
+# Bexlite Base Template
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+It's a template for basic bexlite stack. It's including Bun, Elysia, HTMX and Sqlite.
+
+How to start :
+
+1. Clone the project
+
 ```bash
-bun create elysia ./elysia-example
+git clone https://github.com/bexlite-stack/bexlite-base-template.git yourProjectName
 ```
 
-## Development
-To start the development server run:
+2. Go into project folder.
+
 ```bash
-bun run dev
+cd yourProjectName
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+3. Install all dependencies.
+
+```bash
+bun i
+```
+
+4. start the dev.
+
+```bash
+bun start
+```
